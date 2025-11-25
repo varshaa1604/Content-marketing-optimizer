@@ -6,7 +6,7 @@ The AI-Based Automated Content Marketing Optimizer is a smart system that helps 
 
 Run the Streamlit application:
 
-    python streamlit run app4.py
+    python streamlit run streamlit_app.py
 
 Download TextBlob corpora (run only once):
 
