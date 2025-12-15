@@ -1,4 +1,4 @@
-# ab_coach2.py
+# ab_coach.py
 """
 A/B Testing
 """
@@ -14,9 +14,9 @@ from datetime import datetime, timedelta
 from app.integrations.social_poster import SocialPoster
 from app.integrations.social_ingestor import SocialIngestor
 from app.integrations.sheets_connector import append_row, read_rows, update_row, find_row
-from app.integrations.slack_notifier3 import SlackNotifier
+from app.integrations.slack_notifier import SlackNotifier
 
-from app.sentiment_engine.sentiment_analyzer2 import analyze_sentiment, analyze_post_comments
+from app.sentiment_engine.sentiment_analyzer import analyze_sentiment, analyze_post_comments
 from app.integrations.trend_fetcher import TrendFetcher
 
 logger = logging.getLogger(__name__)

@@ -7,17 +7,17 @@ import pandas as pd
 # IMPORT UPDATED MODULES
 # ---------------------------
 
-from app.content_engine.content_generator3 import generate_final_variations
-from app.sentiment_engine.sentiment_analyzer2 import analyze_sentiment
-from app.content_engine.trend_based_optimizer3 import TrendBasedOptimizer
-from app.metrics_engine.tracker3 import push_raw_feedback, push_aggregates, log_campaign_event
-from app.metrics_engine.metrics_tracker2 import push_daily_metrics
-from app.metrics_engine.metrics_hub2 import record_campaign_metrics
+from app.content_engine.content_generator import generate_final_variations
+from app.sentiment_engine.sentiment_analyzer import analyze_sentiment
+from app.content_engine.trend_based_optimizer import TrendBasedOptimizer
+from app.metrics_engine.tracker import push_raw_feedback, push_aggregates, log_campaign_event
+from app.metrics_engine.metrics_tracker import push_daily_metrics
+from app.metrics_engine.metrics_hub import record_campaign_metrics
 
-from app.ab_testing.ab_coach2 import ABCoach
+from app.ab_testing.ab_coach import ABCoach
 from app.ml_engine.auto_retrainer import AutoRetrainer
 
-from app.integrations.slack_notifier3 import SlackNotifier
+from app.integrations.slack_notifier import SlackNotifier
 
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
